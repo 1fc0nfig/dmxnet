@@ -141,8 +141,8 @@ class dmxnet {
       // give the error to the function and back to the parent object
       this.errFunc(err);
     } else {
-      // if none, trow as before
-      throw err;
+        // throw err
+        this.logger.error("FATAL ERROR: ", err);    
     }
   }
 
